@@ -17,7 +17,7 @@ title: CS 276
 tagline: Graduate Cryptography
 description: Course website for CS 276 -- Graduate Cryptography
 # author: Kevin Lin
-baseurl: '/cs276-fall24' # the subpath of your site, e.g. /blog
+baseurl: '/cs276-s26' # the subpath of your site, e.g. /blog
 url: 'https://crypto-berkeley.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "vendor"]
 favicon_ico: "/assets/images/alice.ico"
@@ -58,7 +58,7 @@ defaults:
     values:
       layout: staffer
       height: 300
-      subpath: '/assets/images/'
+      subpath: 'assets/images/'
       width: 300
   - scope:
       path: ''
