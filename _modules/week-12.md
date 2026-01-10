@@ -2,12 +2,13 @@
 title: Week 12
 ---
 
-Tu 11/12
-: **Lecture**{: .label .label-green } Project OHs
+Tu 4/07
+: **Lecture**{: .label .label-green } [zk Proofs](assets/lecture-notes/collection-F24.pdf)
     : 
-: **Homework**{: .label .label-yellow } [Homework 9](assets/homework/hw-9.pdf)
+<!-- : **Homework**{: .label .label-yellow } [Homework 9](assets/homework/hw-9.pdf)
     : [LaTeX](assets/homework/hw-9.tex), [Solution](assets/homework/hw-9-sol.pdf)
+-->
 
-Th 11/14
-: **Lecture**{: .label .label-green } Project OHs
+Th 4/09
+: **Lecture**{: .label .label-green } [NIZKs/Naor Yung CPA/CCA](assets/lecture-notes/collection-F24.pdf)
     : 

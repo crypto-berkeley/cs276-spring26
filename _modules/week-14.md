@@ -2,10 +2,10 @@
 title: Week 14
 ---
 
-Tu 11/26
-: **Lecture**{: .label .label-green } [Secure Computation](assets/lecture-notes/collection-F24.pdf)
+Tu 4/21
+: **Lecture**{: .label .label-green } [zkSNARKs](assets/lecture-notes/collection-F24.pdf)
     : 
 
-Th 11/28
-: **Lecture**{: .label .label-green } No Class (Thanksgiving)
+Th 4/23
+: **Lecture**{: .label .label-green } [zkSNARKs](assets/lecture-notes/collection-F24.pdf)
     : 

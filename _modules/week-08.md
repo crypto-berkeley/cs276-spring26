@@ -2,10 +2,10 @@
 title: Week 8
 ---
 
-Tu 10/15
+Tu 3/10
 : **Lecture**{: .label .label-green } [Public-Key Encryption: Cramer-Shoup Encryption](assets/lecture-notes/collection-F24.pdf)
     : 
 
-Th 10/17
+Th 3/12
 : **Lecture**{: .label .label-green } [Identity-Based Encryption](assets/lecture-notes/collection-F24.pdf)
     : 

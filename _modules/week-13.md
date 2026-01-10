@@ -2,10 +2,10 @@
 title: Week 13
 ---
 
-Tu 11/19
-: **Lecture**{: .label .label-green } [zkSNARKs](assets/lecture-notes/collection-F24.pdf)
+Tu 4/14
+: **Lecture**{: .label .label-green } Project OHs
     : 
 
-Th 11/21
-: **Lecture**{: .label .label-green } [zkSNARKs](assets/lecture-notes/collection-F24.pdf)
+Th 4/16
+: **Lecture**{: .label .label-green } Project OHs
     : 
