@@ -25,7 +25,7 @@ If you have a name and/or set of pronouns that differ from your legal name, desi
 ## Disabled Students' Program (DSP)
 The Disabled Student’s Program (260 César Chávez Student Center #4250; 510-642-0518; [](http://dsp.berkeley.edu/)[http://dsp.berkeley.edu](http://dsp.berkeley.edu/)) serves students with disabilities of all kinds. Services are individually designed and based on the specific needs of each student as identified by DSP's Specialists. If you have already been approved for accommodations through DSP, please know that DSP is ready to quickly adjust your accommodations if your situation changes. 
 
-We encourage DSP students to have their accommodation letters sent to the instructor within the first two weeks of class. Additionally, please send emails to bhaskarr@berkeley.edu for logistics on homework submissions.
+We encourage DSP students to have their accommodation letters sent to the instructor within the first two weeks of class. Additionally, please send emails to srirams@berkeley.edu for logistics on homework submissions.
 
 ## Faculty Equity Advisor
 If you feel that your performance in the class is being impacted by a lack of inclusion, please contact the instructors, your ESS advisor, or the departmental Faculty Equity Advisor (list and information [here](https://diversity.berkeley.edu/faculty-equity-advisors)). An anonymous feedback form is also available [here](https://engineering.berkeley.edu/about/equity-and-inclusion/feedback/).

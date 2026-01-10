@@ -29,14 +29,14 @@ schedule:
       - name: Lecture
         start: 11:00 AM
         end: 12:30 PM
-        location: Soda 405
+        location: Soda 310
   - name: Wednesday
   - name: Thursday
     events:
       - name: Lecture
         start: 11:00 AM
         end: 12:30 PM
-        location: Soda 405
+        location: Soda 310
       - name: GSI Office Hours
         start: 6:00 PM
         end: 8:00 PM

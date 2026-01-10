@@ -45,4 +45,4 @@ Students without sufficient background should consider taking the Undergraduate 
 * Join the course on [Gradescope](https://www.gradescope.com/courses/799228){:target="_blank"} using entry code **2BKDD8**. Gradescope is where you will submit your assignments and view your grades.
 * Join the Ed Discussion forum with this [join link](https://edstem.org/us/join/feHXXN){:target="_blank"}. You will need a *berkeley.edu* email address to join. Ed is where you can post and answer questions about the course.
 * Sign up to scribe two lectures [here](https://docs.google.com/spreadsheets/d/174bPvR3db2Uvda138NZWzITQixrS3XxK4Cn-1Ie1gLM/edit?usp=sharing){:target="_blank"}.
-* If you need DSP accommodations, please have your accommodation letters sent to the instructors as soon as possible. Also, please email bhaskarr@berkeley.edu with any logistical questions.
+* If you need DSP accommodations, please have your accommodation letters sent to the instructors as soon as possible. Also, please email srirams@berkeley.edu with any logistical questions.
