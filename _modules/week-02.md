@@ -3,11 +3,11 @@ title: Week 2
 ---
 
 Tu 1/27
-: **Lecture**{: .label .label-green } [One Way Functions: Brittleness and Amplification (Sections 2.2, 2.3)](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [One Way Functions: Brittleness and Amplification (Sections 2.2, 2.3)](assets/lecture-notes/notes.pdf)
     : 
 
 Th 1/29
-: **Lecture**{: .label .label-green } [One Way Functions: Existence (Section 2.4), Hardness Concentration (Section 2.5)](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [One Way Functions: Existence (Section 2.4), Hardness Concentration (Section 2.5)](assets/lecture-notes/notes.pdf)
     : [Hardness Concentration](https://www.wisdom.weizmann.ac.il/~oded/X/gl.pdf), [Tale of One-Way Functions](https://arxiv.org/abs/cs/0012023) 
 
 {% comment %}

@@ -3,7 +3,7 @@ title: Week 15
 ---
 
 Tu 4/28
-: **Lecture**{: .label .label-green } [Secure Computation](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [Secure Computation](assets/lecture-notes/notes.pdf)
     : 
 {% comment %}
 : **Homework**{: .label .label-yellow } [Homework 10](assets/homework/hw-10.pdf)

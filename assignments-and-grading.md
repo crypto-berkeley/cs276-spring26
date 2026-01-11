@@ -18,29 +18,31 @@ nav_order: 3
 ---
 
 There are three kinds of assignments:
-*   **[Problem Sets](#problem-sets):** typically involve writing proofs. They are assigned weekly.
-*   **[Research Project](#research-project):** Students will do a research project of their choice in the field of cryptography. They should aim to produce publishable results by the end of the semester or at least make progress in that direction.
-*   **[Scribe Notes](#scribe-notes):** Students will each write scribe notes for one lecture.
+*   **[Problem Sets](#problem-sets):** Typically involve writing proofs. 
+*   **[Exams](#exams):** There will be two midterms and one final exam. All exams will be held in class.
+*   **[Scribe Notes](#scribe-notes):** Students can suggest improvement to scribe notes for any past lecture.
 
 Details about each kind of assignment can be found below.
 
-Final grades are based on the following weighted combination of assignment scores:
-*   40% Problem Sets
-*   40% Research Project
-*   20% Scribe Notes and Class Participation
+Final grades are based on the following weighted combination:
+*   25% Midterm 1
+*   25% Midterm 2
+*   30% Final Exam
+*   10% Problem Sets
+*   10% Class Participation (includes scribe notes)
 
 **Late Policy:** Assignments submitted late will lose 5% for every hour that they are late. For example: if you submit 1 minute late, you lose 5%. If you submit 61 minutes late, you lose 10%.
 
 
 ## Problem Sets
-Problem sets are assigned weekly and will typically involve writing proofs. You will submit your work on [Gradescope](https://www.gradescope.com/courses/799228){:target="_blank"} (use entry code **2BKDD8** to join).
+Problem sets are assigned weekly (or biweekly) and will typically involve writing proofs. You will submit your work on [Gradescope](https://www.gradescope.com/courses/1220564){:target="_blank"} (use entry code **ZJYXVZ** to join).
 
 You don't have to write a perfect solution to get a perfect score. You will receive full credit if you complete every problem, get most of the details correct, and complete the self-scoring.
 
-**Drop Policy:** We will drop your lowest 2 problem set scores.
+**Drop Policy:** We will drop your lowest 1 problem set scores.
 
 ### Self-Scoring
-After the answer key is posted, you will score your submission based on how rigorous and correct your solutions are, using the following rubric:
+After the submission deadline, you will score your submission based on how rigorous and correct your solutions are, using the following rubric:
 * 5 points: The solution is complete and largely correct. There may be small mistakes.
 * 3 points: The main approach is right, but there are major gaps in the solution.
 * 1 or 2 points: The main approach is not correct.
@@ -56,38 +58,30 @@ Similarly, you may use books or online resources to help solve homework problems
 
 Any student found to be violating these policies or cheating otherwise risks automatically failing the class and being referred to the Center for Student Conduct.
 
-## Research Project
-You will do a research project related to cryptography. Aim to produce novel results by the end of the semester, although partial progress toward this goal is fine. You may work with other students and submit one project report for the whole group. 
+## Exams
+There will be two midterms and one final exam. All exams will be held in class during the regular class meeting times.
 
-Since many students are already doing research in cryptography outside of the course, you may use an outside project to satisfy this requirement. However, the project should not have been underway before the start of the semester. Additionally, you may collaborate with people outside of the class, but you should be a significant contributor and should write the project report without outside help.
+*   **Midterm 1:** Tuesday, February 17
+*   **Midterm 2:** Thursday, March 19
+*   **Final Exam:** Thursday, April 30
 
-If you need help finding a project topic, please reach out to the course staff. We are happy to offer advice.
-
-### Grading
-Projects will be evaluated similarly to how papers are reviewed for conferences and journals. The following criteria are important:
-*   Motivation: Review the literature and explain why your project -- if successful -- would be a novel and useful contribution to the field.
-*   Results: Present your work clearly. Support your claims with proofs or data.
-
-We understand that research projects often fail to produce results and that 1 semester may not be enough time to produce a publishable paper, so it is fine to produce partial results or failed attempts. You can explain what you would do if you had more time or what you can learn from any failed attempts. Projects that do these things can receive full credit if the work is presented clearly.
-
-### Timeline
-We will have the following checkpoints throughout the semester.
-*   F 9/20: Identify a topic and collaborators (if any).
-*   F 10/25: Submit a research proposal (no more than 3 pages). The proposal should state a clear research goal, review the relevant literature, and argue why this goal is novel and interesting. Furthermore, it should describe the approach that you will take to solving the problem and explain why it could plausibly succeed.
-*   F 12/20: Submit the final project report.
+**Important:** No substitute exams will be offered. Students must ensure they have no conflicts with the scheduled exam dates. Students are responsible for making sure they can attend all exams.
 
 ## Scribe Notes
-Each student will write scribe notes for two lectures. Sign up to scribe lectures [here](https://docs.google.com/spreadsheets/d/174bPvR3db2Uvda138NZWzITQixrS3XxK4Cn-1Ie1gLM/edit?usp=sharing){:target="_blank"}. Your notes are due within 1 week after the lecture you scribed.
+Each student can suggest improvements to the scribe notes. For this:
 
-1. First clone the [github repo](https://github.com/sanjamg/276-F24-Notes.git){:target="_blank"} for the scribe notes.
+1. First clone the [github repo](https://github.com/crypto-berkeley/276.git){:target="_blank"} for the scribe notes.
 
-2. Make any changes locally. If you're scribing lecture 4, for instance, create a file called `lec04-F24.tex` for your notes. Additionally, you may find it useful to copy from old scribe notes. They can be found in the `Old Scribe Notes` folder and can be previewed by compiling the `Old Scribe Notes/collection.tex` file.
+2. Make any changes locally. 
 
-3. Use [latexdiff](https://www.overleaf.com/learn/latex/Articles/How_to_use_latexdiff_on_Overleaf){:target="_blank"} to generate a latex document `diff.tex` that illustrates your changes, and add it to the repo. If `diff.tex` already exists in the repo, you may overwrite its contents.
+3. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request){:target="_blank"} of your changes. The course staff will review and approve your changes, which will then become part of our [scribe notes](/assets/lecture-notes/notes.pdf){:target="_blank"}. 
 
-4. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request){:target="_blank"} of your changes. The course staff will review and approve your changes, which will then become part of our [scribe notes](/assets/lecture-notes/collection-F24.pdf){:target="_blank"}. 
-
-5. Please make any revisions to your notes that the course staff may suggest.
+4. Please make any revisions to your notes that the course staff may suggest.
 
 ## Class Participation
+Class participation consists of:
+*   Actually coming to class
+*   Interacting in class (asking questions, participating in discussions)
+*   Contributing to improving the class notes (scribe notes are part of class participation)
+
 Some examples of good class participation include answering questions on Ed and participating in lecture discussions.

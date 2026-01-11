@@ -5,12 +5,11 @@ description: Suggested textbooks and lecture notes
 nav_order: 5
 ---
 
-*	[Scribe notes from past semesters](/assets/lecture-notes/CS_276_Old_Scribe_Notes.pdf)
-*	Scribe notes for this semester are found in our [shared Overleaf project](https://www.overleaf.com/read/gtzztzzrdhtb#49cc0c) and can be viewed by compiling `collection-F24.tex`. 
-*	Course materials from a previous iteration of this course: [CS 276 - Fall 2014](http://people.eecs.berkeley.edu/~sanjamg/assets/classes/cs276-fall14/)
+*	[Scribe notes from past semesters](https://crypto-berkeley.github.io/cs276-fall24/assets/lecture-notes/notes.pdf)
+*	Course materials from the last time this course was taught: [CS 276 - Fall 2024](https://crypto-berkeley.github.io/cs276-fall24/)
 
 ## CS 171 - Undergrad Cryptography
-*	Course materials from [CS 171 - Spring 2024](https://eecs171.com/)
+*	Course materials from [CS 171 - Spring 2024](https://crypto-berkeley.github.io/cs171-spring24/)
 *   Katz and Lindell's textbook [Introduction to Modern Cryptography](http://staff.ustc.edu.cn/~mfy/moderncrypto/reading%20materials/Introduction_to_Modern_Cryptography.pdf) matches much of the curriculum from CS 171.
 
 ## Other Resources

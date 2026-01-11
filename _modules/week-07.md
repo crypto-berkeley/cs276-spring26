@@ -9,9 +9,9 @@ Su 3/01
 {% endcomment %}
 
 Tu 3/03
-: **Lecture**{: .label .label-green } [BLS Signatures and Public-Key Encryption: Definitions and Constructions](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [BLS Signatures and Public-Key Encryption: Definitions and Constructions](assets/lecture-notes/notes.pdf)
     : [BLS Signatures](https://www.iacr.org/archive/asiacrypt2001/22480516.pdf)
 
 Th 3/05
-: **Lecture**{: .label .label-green } [Public Key Encryption: Fujisaki-Okamoto Transformation](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [Public Key Encryption: Fujisaki-Okamoto Transformation](assets/lecture-notes/notes.pdf)
     : 
