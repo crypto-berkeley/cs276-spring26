@@ -12,7 +12,7 @@ Tu 4/28
 {% endcomment %}
 
 Th 4/30
-: **Lecture**{: .label .label-green } [Obfustopia](assets/lecture-notes/collection-F24.pdf)
+: **Final Exam**{: .label .label-red } Final Exam
     : 
 {% comment %}
 : **Homework**{: .label .label-yellow } [Homework 11](assets/homework/hw-11.pdf)

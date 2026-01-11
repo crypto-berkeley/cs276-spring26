@@ -7,5 +7,5 @@ Tu 3/10
     : 
 
 Th 3/12
-: **Lecture**{: .label .label-green } [Identity-Based Encryption](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [Fully-Homomorphic Encryption](assets/lecture-notes/collection-F24.pdf)
     : 

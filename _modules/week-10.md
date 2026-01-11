@@ -8,9 +8,9 @@ M 3/23
 {% endcomment %}
 
 Tu 3/24
-: **Lecture**{: .label .label-green } No Class (Spring Recess)
+: **No Class**{: .label .label-blue } Spring Recess
     : 
 
 Th 3/26
-: **Lecture**{: .label .label-green } No Class (Spring Recess)
+: **No Class**{: .label .label-blue } Spring Recess
     : 

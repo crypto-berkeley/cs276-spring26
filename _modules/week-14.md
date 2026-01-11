@@ -7,5 +7,5 @@ Tu 4/21
     : 
 
 Th 4/23
-: **Lecture**{: .label .label-green } [zkSNARKs](assets/lecture-notes/collection-F24.pdf)
+: **Lecture**{: .label .label-green } [Obfustopia](assets/lecture-notes/collection-F24.pdf)
     : 

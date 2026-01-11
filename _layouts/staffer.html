@@ -1,7 +1,7 @@
 <div class="staffer">
   {%- if page.photo -%}
   {%- assign image_path = page.subpath | append: page.photo -%}
-  <img class="staffer-image" src="{{ image_path | relative_url }}" alt="" width="{{ page.width }}" height="{{ page.height }}">
+  <img class="staffer-image" src="{{ image_path | relative_url }}" alt="{{ page.name }}">
   {%- endif -%}
   <div>
     <h3 class="staffer-name" id="{{ page.name | slugify }}">
