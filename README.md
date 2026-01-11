@@ -1,3 +1,13 @@
+---
+layout: home
+title: Home
+nav_exclude: false
+permalink: /:path/
+seo:
+  type: Course
+  name: CS 276
+---
+
 <style>
   .row {
     display: flex;
@@ -56,3 +66,7 @@
     <img src="assets/images/alicebob.png" alt="Alice and Bob">
   </div>
 </div>
+
+{% for module in site.modules %}
+{{ module }}
+{% endfor %}
