@@ -37,9 +37,5 @@ schedule:
         start: 11:00 AM
         end: 12:30 PM
         location: Soda 310
-      - name: GSI Office Hours
-        start: 6:00 PM
-        end: 8:00 PM
-        location: Soda 611
   - name: Friday
 ---
