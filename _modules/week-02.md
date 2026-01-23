@@ -3,7 +3,7 @@ title: Week 2
 ---
 
 Tu 1/27
-: **Lecture**{: .label .label-green } [One Way Functions: Brittleness and Amplification (Sections 2.2, 2.3)](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [One Way Functions: Amplification, Existence (Sections 2.3, 2.4)](assets/lecture-notes/notes.pdf)
     : 
 
 Th 1/29

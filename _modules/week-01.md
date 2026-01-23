@@ -8,7 +8,7 @@ Tu 1/20
     : [A Note on Negligible Functions](https://eprint.iacr.org/1997/004.pdf)
 
 Th 1/22
-: **Lecture**{: .label .label-green } [One Way Functions (Section 2.1)](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [One Way Functions (Section 2.1, 2.2)](assets/lecture-notes/notes.pdf)
     : [Slides](assets/lecture-notes/chap2-1.pdf)
 
 {% comment %}
