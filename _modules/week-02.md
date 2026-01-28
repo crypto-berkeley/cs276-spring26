@@ -4,7 +4,8 @@ title: Week 2
 
 Tu 1/27
 : **Lecture**{: .label .label-green } [One Way Functions: Amplification, Existence (Sections 2.3, 2.4)](assets/lecture-notes/notes.pdf)
-    : 
+    : [Slides](assets/lecture-notes/chap2-2.pdf)
+ 
 
 Th 1/29
 : **Lecture**{: .label .label-green } [One Way Functions: Existence (Section 2.4), Hardness Concentration (Section 2.5)](assets/lecture-notes/notes.pdf)
