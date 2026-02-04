@@ -4,10 +4,12 @@ title: Week 3
 
 Tu 2/03
 : **Lecture**{: .label .label-green } [Pseudorandom Generators (Sections 3.1-3.3)](assets/lecture-notes/notes.pdf) (*Guest Lecture*) 
+    : [Slides](assets/lecture-notes/chap3-1.pdf)
     : [Funny](https://xkcd.com/221/) 
 
 Th 2/05
 : **Lecture**{: .label .label-green } [Pseudorandom Functions (Sections 3.4, 3.5)](assets/lecture-notes/notes.pdf) (*Guest Lecture*)
+    : [Slides](assets/lecture-notes/chap3-2.pdf)
     : [GGM PRF](https://www.wisdom.weizmann.ac.il/~oded/X/ggm.pdf), [Naor-Reingold](https://dl.acm.org/doi/abs/10.1145/972639.972643)
 
 {% comment %}
