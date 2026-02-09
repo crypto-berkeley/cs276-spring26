@@ -14,5 +14,5 @@ Th 2/05
 
 
 Su 2/08 (Due on 2/15)
-: **Homework**{: .label .label-yellow } [Homework 1](assets/homework/hw1.pdf)
+: **Homework**{: .label .label-yellow } [Homework 1](assets/homework/hw1.pdf) (Due on 2/15)
     : [LaTeX](assets/homework/hw1_template.tex)
