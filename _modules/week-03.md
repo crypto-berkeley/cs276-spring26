@@ -13,6 +13,6 @@ Th 2/05
     : [GGM PRF](https://www.wisdom.weizmann.ac.il/~oded/X/ggm.pdf), [Naor-Reingold](https://dl.acm.org/doi/abs/10.1145/972639.972643)
 
 
-Su 2/08 (Due on 2/15)
+Su 2/08
 : **Homework**{: .label .label-yellow } [Homework 1](assets/homework/hw1.pdf) (Due on 2/15)
     : [LaTeX](assets/homework/hw1_template.tex)
