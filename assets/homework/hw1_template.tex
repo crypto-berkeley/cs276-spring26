@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate,comment}
+\usepackage{url}
+\usepackage{color}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{mdframed}
+% \input{preamble}
+
+\pagestyle{fancy}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{20pt}
+\fancyhead[L]{\small{CS 276, Spring 2026}}
+\fancyhead[R]{\small{Prof. Sanjam Garg}}
+
+\newcommand\custombox[2]{%%
+    \fbox{\rule{#1}{0pt}\rule[-0.5ex]{0pt}{#2}}}
+
+\newcommand\answerbox{%%
+    \fbox{\rule{1in}{0pt}\rule[-0.5ex]{0pt}{4ex}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newenvironment{assumption}{\noindent{\bf Assumption}\hspace*{1em}\begin{em}}{\end{em}\medskip}
+\newenvironment{solution}{\color{blue}\noindent{\bf Solution}\hspace*{1em}}{\qed\medskip}
+\newcommand{\proof}{\noindent{\bf Proof. }} %% To begin a proof write \proof
+\newcommand{\qed}{\mbox{}\hspace*{\fill}\nolinebreak\mbox{$\rule{0.6em}{0.6em}$}} %%to end your proof write $\qed$.
+% \newenvironment{proof}{\noindent\textit{Proof.}\newline\hspace*{1em}}{\qed\medskip}
+
+\numberwithin{equation}{section}
+
+
+\newcommand{\duedate}{Sunday, Feb 15, 2026 at 8:59pm via Gradescope}
+
+
+\begin{document}
+\section*{CS 276: Homework 1\\ {\small Due Date: \duedate} }
+\textbf{Usage of LLMs/Generative AI tools is prohibited. Other online resources (textbooks/lecture notes) are permissible.}
+
+\begin{enumerate}
+    \item Let $f$ be a length-preserving one way function $f:\{0,1\}^{n} \rightarrow \{0,1\}^n$. Given $k > 0$, use $f$ to build a one way function $g$ such that $g^k$ is a secure one-way
+    function but $g^{k+1}$ is insecure. 
+
+    \item Suppose one way permutations exist. Does there exist a one-way permutation $f: \{0,1\}^n \rightarrow \{0,1\}^n$
+    with a fixed point, i.e. $f(0^n) = 0^n$?
+
+    \item Prove or disprove the following:
+    \begin{enumerate}
+        \item Let $F$ be a pseudorandom generator. Then, $G(s) := F(s) \oplus F(\bar{s})$ is also a pseudorandom generator.
+        \item Let $F = \{F_k\}$ be a pseudorandom function family with key length equal to input length. Then, $G_k(x) := F_{F_k(x)}(x)$ is a also pseudorandom function.
+        \item Let $F = \{F_k\}$ be a pseudorandom function family with key length equal to input length. Then, $G_k(x) := F_{F_x(k)}(x)$ is also a pseudorandom function.
+    \end{enumerate}
+
+    \item Construct a \textit{puncturable} PRF from a PRG $G:\{0,1\}^n \rightarrow \{0,1\}^{2n}$. (Write down the description of $F$ in terms of $G$, describe the $\mathsf{puncture}$ and $\mathsf{eval}$ algorithms, and show that it satisfies the security definition below) \\
+    A PRF $F: \{0,1\}^n \times \{0,1\}^n \rightarrow \{0,1\}^n$ is called \textit{puncturable} if 
+    \begin{itemize}
+        \item $\exists$ PPT algorithms \\
+        $\mathsf{puncture}(k,x)$ that outputs a punctured key $k_{-x}$,\\
+        $\mathsf{eval}(k_{-x},x)$ such that $\mathsf{eval}(k_{-x}, x') = F_k(x') \; \forall\, x' \neq x$.
+        \item For all $x$, even given the punctured key, $F_K(x)$ is still (computationally) indistinguishable from random, i.e., \\
+        for uniform random variables $K,U_n$ 
+        \[
+            (\mathsf{puncture}(K,x), F_K(x)) \approx_c (\mathsf{puncture}(K,x), U_n)
+        \]
+    \end{itemize}
+
+\end{enumerate}
+
+\end{document}
