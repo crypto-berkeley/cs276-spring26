@@ -70,10 +70,8 @@
         $\mathsf{puncture}(k,x)$ that outputs a punctured key $k_{-x}$,\\
         $\mathsf{eval}(k_{-x},x)$ such that $\mathsf{eval}(k_{-x}, x') = F_k(x') \; \forall\, x' \neq x$.
         \item For all $x$, even given the punctured key, $F_K(x)$ is still (computationally) indistinguishable from random, i.e., \\
-        for uniform random variables $K,U_n$ 
-        \[
-            (\mathsf{puncture}(K,x), F_K(x)) \approx_c (\mathsf{puncture}(K,x), U_n)
-        \]
+        $\forall \text{ nu-PPT } A \;\exists \epsilon(n), n_A$ such that $\forall n > n_A$ and $\forall x \in \{0,1\}^n$, we have that
+        $$\left|\Pr_{K}[A(\mathsf{puncture}(K,x), F_K(x)) = 1] - \Pr_{K,r}[A(\mathsf{puncture}(K,x), r) = 1]\right| < \epsilon(n)$$
     \end{itemize}
 
 \end{enumerate}
