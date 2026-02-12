@@ -7,5 +7,5 @@ Tu 2/17
     : 
 
 Th 2/19
-: **Lecture**{: .label .label-green } [Digital Signatures: Definition, One-Time Signatures, Universal One-Way Hash Functions](assets/lecture-notes/notes.pdf)
-    : [Chapter 6 of FOC Volume II for construction from One-Way Permutations](https://www.wisdom.weizmann.ac.il/~oded/PSBookFrag/sign.ps), [Construction](https://dl.acm.org/doi/pdf/10.1145/100216.100269) from One-Way Functions (also [see](https://eprint.iacr.org/2005/328.pdf))
+: **Lecture**{: .label .label-green } [Message Authentication Codes and Authenticated Encryption: Definitions and Constructions](assets/lecture-notes/notes.pdf)
+    : Section 12.3 of [JoC](https://joyofcryptography.com/pdf/chap12.pdf), [Detailed Survey of Modes](https://www.cs.ucdavis.edu/~rogaway/papers/modes.pdf), for AES-GCM Mode see [here](https://eprint.iacr.org/2004/193.pdf), and [Section 9.7 here](https://toc.cryptobook.us/book.pdf).
