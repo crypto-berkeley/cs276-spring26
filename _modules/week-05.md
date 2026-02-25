@@ -3,7 +3,7 @@ title: Week 5
 ---
 
 Tu 2/17
-: **Midterm 1**{: .label .label-red } Midterm 1
+: **Midterm 1**{: .label .label-red } [Midterm 1](assets/exams/m1.pdf), [Solutions](assets/exams/m1_sol.pdf)
     : 
 
 Th 2/19
