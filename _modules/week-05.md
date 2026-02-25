@@ -3,8 +3,8 @@ title: Week 5
 ---
 
 Tu 2/17
-: **Midterm 1**{: .label .label-red } [Midterm 1](assets/exams/m1.pdf), [Solutions](assets/exams/m1_sol.pdf)
-    : 
+: **Midterm 1**{: .label .label-red } [Midterm 1](assets/exams/m1.pdf) 
+    : [Solutions](assets/exams/m1_sol.pdf)
 
 Th 2/19
 : **Lecture**{: .label .label-green } [Message Authentication Codes and Authenticated Encryption: Definitions and Constructions](assets/lecture-notes/notes.pdf)
