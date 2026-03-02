@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate,comment}
+\usepackage{url}
+\usepackage{color}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{mdframed}
+% \input{preamble}
+
+\pagestyle{fancy}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{20pt}
+\fancyhead[L]{\small{CS 276, Spring 2026}}
+\fancyhead[R]{\small{Prof. Sanjam Garg}}
+
+\newcommand\custombox[2]{%%
+    \fbox{\rule{#1}{0pt}\rule[-0.5ex]{0pt}{#2}}}
+
+\newcommand\answerbox{%%
+    \fbox{\rule{1in}{0pt}\rule[-0.5ex]{0pt}{4ex}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newenvironment{assumption}{\noindent{\bf Assumption}\hspace*{1em}\begin{em}}{\end{em}\medskip}
+\newenvironment{solution}{\color{blue}\noindent{\bf Solution}\hspace*{1em}}{\qed\medskip}
+\newcommand{\proof}{\noindent{\bf Proof. }} %% To begin a proof write \proof
+\newcommand{\qed}{\mbox{}\hspace*{\fill}\nolinebreak\mbox{$\rule{0.6em}{0.6em}$}} %%to end your proof write $\qed$.
+% \newenvironment{proof}{\noindent\textit{Proof.}\newline\hspace*{1em}}{\qed\medskip}
+
+\numberwithin{equation}{section}
+
+
+\newcommand{\duedate}{Sunday, Mar 8, 2026 at 8:59pm via Gradescope}
+
+
+\begin{document}
+\section*{CS 276: Homework 2\\ {\small Due Date: \duedate} }
+\textbf{Usage of LLMs/Generative AI tools is prohibited. Other online resources (textbooks/lecture notes) are permissible.}
+
+\begin{enumerate}
+    \item \textbf{(Insecurity of Same-Seed UOWHF Composition.)}
+    
+    Let $\mathcal{H}^{2*,*} = \{h_s : \{0,1\}^{2*} \to \{0,1\}^{*}\}_{s \in \{0,1\}^*}$ be a $(2*,*)$-UOWHF. Recall that in Step IV of the UOWHF construction (construction~5.4 in the \href{https://crypto-berkeley.github.io/cs276-spring26/assets/lecture-notes/notes.pdf}{lecture notes}), we use independent seeds $s_1, s_2, \dots$ at each application. Consider instead the following simpler variant where we reuse the \emph{same} seed and apply $h_s$ twice (this can be extended to $t$ applications):
+    \[
+        H_s(x) \;=\; h_s\!\bigl(h_s(x)\bigr),
+    \]
+    where $x \in \{0,1\}^{4n}$ and $H_s : \{0,1\}^{4n} \to \{0,1\}^{n}$. (Here $h_s$ first compresses $4n$ bits to $2n$ bits, then $2n$ bits to $n$ bits.)
+
+    Show that even if $\mathcal{H}^{2*,*}$ is a secure UOWHF, the family $\mathcal{H} = \{H_s\}_{s \in \{0,1\}^*}$ is \textbf{not} necessarily a secure UOWHF. That is, describe a family $\{h_s\}$ that is a UOWHF but for which the above construction is insecure.
+
+    
+
+    \item \textbf{(MAC Security over Vector Spaces.)}
+
+    Let $q$ be a prime with $q \geq 2^n$ and let $\mathbb{F}_q$ denote the field of integers modulo $q$. $[n]$ denotes the set of integers $\{1, \dots, n\}$. Consider a MAC scheme where messages are \emph{nonzero} vectors $\mathbf{m} \in \mathbb{F}_q^n \setminus \{\mathbf{0}\}$ and tags are elements $t \in \mathbb{F}_q$. We define the following security notion.
+
+    \begin{definition}
+    A \emph{vector MAC scheme} $\Pi = (\mathsf{Gen}, \mathsf{MAC}, \mathsf{Verify})$ consists of:
+    \begin{enumerate}
+        \item $k \leftarrow \mathsf{Gen}(1^n)$: outputs a key $k$.
+        \item $t \leftarrow \mathsf{MAC}(k, \mathbf{m})$: on input key $k$ and message $\mathbf{m} \in \mathbb{F}_q^n \setminus \{\mathbf{0}\}$, outputs a tag $t \in \mathbb{F}_q$.
+        \item $0/1 \leftarrow \mathsf{Verify}(k, \mathbf{m}, t)$: outputs 1 iff $t$ is a valid tag for $\mathbf{m}$.
+    \end{enumerate}
+    \end{definition}
+
+    \begin{definition}[Span-Forge Game: $\mathsf{SpanForge}_{\mathcal{A},\Pi}(n)$]\label{def:spanforge}~
+    \begin{enumerate}
+        \item \textbf{Setup:} The challenger samples $k \leftarrow \mathsf{Gen}(1^n)$. $\mathcal{A}$ is given $1^n$.
+        \item \textbf{Queries:} $\mathcal{A}$ adaptively submits messages $\mathbf{m}^{(1)}, \dots, \mathbf{m}^{(q')}  \in \mathbb{F}_q^n \setminus \{\mathbf{0}\}$. For each query $\mathbf{m}^{(i)}$, the challenger returns $t^{(i)} \leftarrow \mathsf{MAC}(k, \mathbf{m}^{(i)})$.
+        \item \textbf{Forgery:} $\mathcal{A}$ outputs $(\mathbf{m}^*, t^*)$. The output of the game is 1 if:
+        \[
+            \mathbf{m}^* \notin \mathrm{span}\{\mathbf{m}^{(1)}, \dots, \mathbf{m}^{(q')}\} \quad \text{and} \quad \mathsf{Verify}(k, \mathbf{m}^*, t^*) = 1.
+        \]
+    \end{enumerate}
+    \end{definition}
+
+    \begin{definition}[Span-CMA Security]
+    $\Pi$ is \emph{Span-CMA-secure} if for all nu-PPT $\mathcal{A}$:
+    $\left|\Pr[\mathsf{SpanForge}_{\mathcal{A},\Pi}(n) = 1]\right| = \mathsf{negl}(n)$.
+    \end{definition}
+
+    \medskip
+    \noindent\textbf{Construction.} Let $F : \mathcal{K} \times [n] \to \mathbb{F}_q$ be a PRF. Define the vector MAC scheme $\Pi$ as follows:
+    \begin{itemize}
+        \item $\mathsf{Gen}(1^n)$: Sample $k \xleftarrow{\$} \mathcal{K}$. Output $k$.
+        \item $\mathsf{MAC}(k, \mathbf{m})$: Output $t = \sum_{i=1}^{n} m_i \cdot F(k, i) \in \mathbb{F}_q$.
+        \item $\mathsf{Verify}(k, \mathbf{m}, t)$: Output 1 iff $t = \mathsf{MAC}(k, \mathbf{m})$.
+    \end{itemize}
+
+    \begin{enumerate}[(a)]
+        \item Prove that $\Pi$ is Span-CMA-secure.
+        \item Show that $\Pi$ is \textbf{not} EUF-CMA-secure. That is, describe an efficient adversary that makes a single MAC query and produces a valid existential forgery.
+        \item A natural attempt to fix the scheme is to add a constant term to break linearity. Consider the modified MAC:
+        \[
+            \mathsf{MAC}'(k, \mathbf{m}) = F(k, 0) + \sum_{i=1}^{n} m_i \cdot F(k, i),
+        \]
+        where $F(k, 0)$ is an additional PRF evaluation at a fixed input $0 \notin [n]$. Is $\mathsf{MAC}'$ EUF-CMA-secure? Justify your answer.
+    \end{enumerate}
+
+    
+
+\end{enumerate}
+
+\end{document}

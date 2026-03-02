@@ -10,3 +10,15 @@ _site
 .DS_Store
 Gemfile.lock
 vendor
+
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.gz
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.toc
