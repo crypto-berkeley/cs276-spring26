@@ -19,6 +19,5 @@ vendor
 *.gz
 *.log
 *.out
-*.pdf
 *.synctex.gz
 *.toc
