@@ -14,6 +14,7 @@ Mo 3/02
 
 Tu 3/03
 : **Lecture**{: .label .label-green } [Random Oracle Methodology, Full Domain Hash, Schnorr Signature Scheme](assets/lecture-notes/notes.pdf)
+    : [Slides](assets/lecture-notes/chap5-3.pdf)
     : [Random Oracles](https://dl.acm.org/doi/pdf/10.1145/168588.168596) and [more](https://eprint.iacr.org/1998/011.pdf), [Schnorr Signatures](https://www.di.ens.fr/david.pointcheval/Documents/Papers/2000_joc.pdf)
 
 Th 3/05
