@@ -2,6 +2,10 @@
 title: Week 8
 ---
 
+Mo 3/09
+: **Homework**{: .label .label-yellow } [Homework 3](assets/homework/hw3.pdf)
+    : [LaTeX](assets/homework/hw3_template.tex)
+
 Tu 3/10
 : **Lecture**{: .label .label-green } [Public-Key Encryption: Cramer-Shoup Encryption](assets/lecture-notes/notes.pdf)
     : 

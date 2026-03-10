@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate,comment}
+\usepackage{url}
+\usepackage{color}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{mdframed}
+% \input{preamble}
+
+\pagestyle{fancy}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{20pt}
+\fancyhead[L]{\small{CS 276, Spring 2026}}
+\fancyhead[R]{\small{Prof. Sanjam Garg}}
+
+\newcommand\custombox[2]{%%
+    \fbox{\rule{#1}{0pt}\rule[-0.5ex]{0pt}{#2}}}
+
+\newcommand\answerbox{%%
+    \fbox{\rule{1in}{0pt}\rule[-0.5ex]{0pt}{4ex}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newenvironment{assumption}{\noindent{\bf Assumption}\hspace*{1em}\begin{em}}{\end{em}\medskip}
+\newenvironment{solution}{\color{blue}\noindent{\bf Solution}\hspace*{1em}}{\qed\medskip}
+\newcommand{\proof}{\noindent{\bf Proof. }} %% To begin a proof write \proof
+\newcommand{\qed}{\mbox{}\hspace*{\fill}\nolinebreak\mbox{$\rule{0.6em}{0.6em}$}} %%to end your proof write $\qed$.
+% \newenvironment{proof}{\noindent\textit{Proof.}\newline\hspace*{1em}}{\qed\medskip}
+
+\numberwithin{equation}{section}
+
+
+\newcommand{\duedate}{Sunday, Mar 15, 2026 at 8:59pm via Gradescope}
+
+\begin{document}
+\section*{CS 276: Homework 3\\ {\small Due Date: \duedate} }
+\textbf{Usage of LLMs/Generative AI tools is prohibited. Other online resources (textbooks/lecture notes) are permissible.}
+
+\begin{definition}[Trapdoor Permutation (TDP)]
+A \emph{trapdoor permutation} is a trapdoor function $(\mathsf{TDP.Gen}, f, f^{-1})$ where for every $(s, t) \leftarrow \mathsf{TDP.Gen}(1^n)$, the function $f(s, \cdot) : \mathcal{D}(s) \to \mathcal{D}(s)$ is a \emph{permutation} on its domain $\mathcal{D}(s)$.
+\end{definition}
+
+\medskip
+\noindent\textbf{Notation.} To avoid confusion between the public-key and secret-key schemes, we write the secret-key encryption scheme as $\mathsf{SKE} = (\mathsf{G}, \mathsf{E}, \mathsf{D})$, where $\mathsf{G}$ generates a key, $\mathsf{E}$ encrypts, and $\mathsf{D}$ decrypts. 
+
+\begin{enumerate}
+    \item \textbf{(IND-CCA Security from Trapdoor Permutations.)}
+
+    Let $(\mathsf{TDP.Gen}, f, f^{-1})$ be a trapdoor permutation and let $H$ be a random oracle $H : \{0,1\}^* \to \{0,1\}^n$. Let $\mathsf{SKE} = (\mathsf{G}, \mathsf{E}, \mathsf{D})$ be an IND-CPA-secure secret-key encryption scheme. Consider the following public-key encryption scheme $\Pi = (\mathsf{Gen}, \mathsf{Enc}, \mathsf{Dec})$:
+
+    \begin{itemize}
+        \item $\mathsf{Gen}(1^n)$: Run $\mathsf{TDP.Gen}(1^n)$ to obtain $(s, t)$. Set $\mathsf{pk} = s$ and $\mathsf{sk} = t$.
+        \item $\mathsf{Enc}(\mathsf{pk}, m)$: Sample $x \xleftarrow{\$} \mathcal{D}(s)$ and compute $y \leftarrow f(s, x)$. Encrypt $m$ using the secret-key scheme with key $H(x)$: compute $z \leftarrow \mathsf{E}(H(x), m)$. Output $c = (y, z)$.
+        \item $\mathsf{Dec}(\mathsf{sk}, c)$: Parse $c = (y, z)$ and compute $x \leftarrow f^{-1}(t, y)$. Decrypt using the secret-key scheme: compute $m \leftarrow \mathsf{D}(H(x), z)$. Output $m$.
+    \end{itemize}
+
+    Prove that $\Pi$ is IND-CCA-secure in the random oracle model.
+
+    \textit{Hint: We have shown that this is IND-CPA-secure (\href{https://crypto-berkeley.github.io/cs276-spring26/assets/lecture-notes/notes.pdf}{Theorem 6.1})}
+
+\end{enumerate}
+
+\end{document}
