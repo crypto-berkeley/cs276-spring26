@@ -19,3 +19,4 @@ Tu 3/03
 
 Th 3/05
 : **Lecture**{: .label .label-green } [Public-Key Encryption: Definitions and Constructions](assets/lecture-notes/notes.pdf)
+    : [Slides](assets/lecture-notes/chap6-1.pdf)

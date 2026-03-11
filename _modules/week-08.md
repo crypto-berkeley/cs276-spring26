@@ -7,9 +7,9 @@ Mo 3/09
     : [LaTeX](assets/homework/hw3_template.tex)
 
 Tu 3/10
-: **Lecture**{: .label .label-green } [Public-Key Encryption: Cramer-Shoup Encryption](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [Public-Key Encryption: Fujisaki-Okamoto Transformation](assets/lecture-notes/notes.pdf)
     : 
 
 Th 3/12
-: **Lecture**{: .label .label-green } [Fully-Homomorphic Encryption](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [Public-Key Encryption: Cramer-Shoup Encryption](assets/lecture-notes/notes.pdf)
     : 
