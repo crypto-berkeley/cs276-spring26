@@ -10,7 +10,7 @@ Su 3/01
 
 Mo 3/02
 : **Homework**{: .label .label-yellow } [Homework 2](assets/homework/hw2.pdf)
-    : [LaTeX](assets/homework/hw2_template.tex)
+    : [LaTeX](assets/homework/hw2_template.tex), [Solution](assets/homework/hw2_solutions.pdf)
 
 Tu 3/03
 : **Lecture**{: .label .label-green } [Random Oracle Methodology, Full Domain Hash, Schnorr Signatures, BLS Signatures](assets/lecture-notes/notes.pdf)
