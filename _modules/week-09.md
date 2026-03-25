@@ -10,5 +10,5 @@ Tu 3/17
 {% endcomment %}
 
 Th 3/19
-: **Midterm 2**{: .label .label-red } Midterm 2
-    : 
+: **Midterm 2**{: .label .label-red } [Midterm 2](assets/exams/m2.pdf) 
+    : [Solutions](assets/exams/m2_sol.pdf)
