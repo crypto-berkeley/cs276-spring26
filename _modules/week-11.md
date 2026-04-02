@@ -4,7 +4,7 @@ title: Week 11
 
 Tu 3/31
 : **Lecture**{: .label .label-green } [Identity-Based Encryption](assets/lecture-notes/notes.pdf)
-    : 
+    : [Slides](assets/lecture-notes/chap7-8.pdf)
 
 Th 4/02
 : **Lecture**{: .label .label-green } [Commitments](assets/lecture-notes/notes.pdf)
