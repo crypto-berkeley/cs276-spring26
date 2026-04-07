@@ -7,7 +7,7 @@ Tu 3/31
     : [Slides](assets/lecture-notes/chap7-8.pdf)
 
 Th 4/02
-: **Lecture**{: .label .label-green } [Interactive Proofs](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [Zero-Knowledge Proofs](assets/lecture-notes/notes.pdf)
     : [Slides](assets/lecture-notes/chap8-2.pdf)
 {% comment %}
 : **Homework**{: .label .label-yellow } [Homework 8](assets/homework/hw-8.pdf)

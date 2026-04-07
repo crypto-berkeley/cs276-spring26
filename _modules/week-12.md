@@ -3,7 +3,7 @@ title: Week 12
 ---
 
 Tu 4/07
-: **Lecture**{: .label .label-green } [zk Proofs](assets/lecture-notes/notes.pdf)
+: **Lecture**{: .label .label-green } [Commitments and zk Proofs](assets/lecture-notes/notes.pdf)
     : 
 
 Th 4/09
