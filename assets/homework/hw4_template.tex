@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate,comment}
+\usepackage{url}
+\usepackage{color}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{mdframed}
+% \input{preamble}
+
+\pagestyle{fancy}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{20pt}
+\fancyhead[L]{\small{CS 276, Spring 2026}}
+\fancyhead[R]{\small{Prof. Sanjam Garg}}
+
+\newcommand\custombox[2]{%%
+    \fbox{\rule{#1}{0pt}\rule[-0.5ex]{0pt}{#2}}}
+
+\newcommand\answerbox{%%
+    \fbox{\rule{1in}{0pt}\rule[-0.5ex]{0pt}{4ex}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newenvironment{assumption}{\noindent{\bf Assumption}\hspace*{1em}\begin{em}}{\end{em}\medskip}
+\newenvironment{solution}{\color{blue}\noindent{\bf Solution}\hspace*{1em}}{\qed\medskip}
+\newcommand{\proof}{\noindent{\bf Proof. }} %% To begin a proof write \proof
+\newcommand{\qed}{\mbox{}\hspace*{\fill}\nolinebreak\mbox{$\rule{0.6em}{0.6em}$}} %%to end your proof write $\qed$.
+% \newenvironment{proof}{\noindent\textit{Proof.}\newline\hspace*{1em}}{\qed\medskip}
+
+\numberwithin{equation}{section}
+
+
+\newcommand{\duedate}{Sunday, Apr 19, 2026 at 8:59pm via Gradescope}
+
+\newif\ifsol
+\solfalse
+
+\begin{document}
+\section*{CS 276: Homework 4\\ {\small Due Date: \duedate} }
+\textbf{Usage of LLMs/Generative AI tools is prohibited. Other online resources (textbooks/lecture notes) are permissible.}
+
+\begin{enumerate}
+    \item 
+    Recall that an IBE scheme $\mathcal{E}_{id} = (G, K, E, D)$ where:
+    \begin{itemize}
+        \item $G(1^n)$: setup; outputs master public key $mpk$ and master secret key $msk$.
+        \item $K(msk, id)$: keygen; outputs secret key $sk_{id}$ for identity $id$.
+        \item $E(mpk, id, m)$: encrypts $m$ under identity $id$, outputs ciphertext $c$.
+        \item $D(sk_{id}, c)$: decrypts; outputs $m$ or $\bot$.
+    \end{itemize}
+    and satisfies correctness and IBE-CPA security (as defined in the notes). Consider a weaker version IBE-CPA* without any key queries as follows:
+
+    \begin{mdframed}
+    \textbf{Game $\text{Exp}_{\Pi, \mathcal{A}}^{\text{IBE-CPA*}}(n)$}
+    \begin{enumerate}
+        \item $\mathcal{A}$ outputs challenge identity $id^*$.
+        \item Challenger runs $(mpk, msk) \leftarrow G(1^n)$, sends $mpk$ to $\mathcal{A}$.
+        \item $\mathcal{A}$ outputs messages $(m_0, m_1)$.
+        \item Challenger samples $b \leftarrow \{0, 1\}$, computes $c^* \leftarrow E(mpk, id^*, m_b)$, sends $c^*$ to $\mathcal{A}$.
+        \item $\mathcal{A}$ outputs $b'$; output 1 if $b' = b$, else 0.
+    \end{enumerate}
+    \end{mdframed}
+
+    Given a IND-CPA secure public key encryption scheme, construct an IBE scheme that satisfies IBE-CPA* security but not IBE-CPA security.
+
+
+    \item 
+    Show that the following commitment scheme for bits satisfies both the hiding and binding properties.
+
+    Let $G: \{0,1\}^n \to \{0,1\}^{3n}$ be a secure PRG. To commit to a bit $b \in \{0, 1\}$, Alice and Bob engage in the following protocol:
+    
+    \begin{itemize}
+        \item \textbf{Commit}: Bob commits to bit $b \in \{0, 1\}$ by doing the following:
+        \begin{enumerate}
+            \item Alice chooses a random $r \in \{0,1\}^{3n}$ and sends $r$ to Bob.
+            \item Bob chooses a random $s \in \{0,1\}^n$ and computes:
+            \[ c = \text{com}(s, r, b) := \begin{cases} G(s) & \text{if } b=0, \\ G(s) \oplus r & \text{if } b=1. \end{cases} \]
+            Bob outputs $c$ as the commitment string and uses $s$ as the opening string.
+        \end{enumerate}
+        \item \textbf{Open}: Bob sends $(b, s)$ to Alice. Alice accepts the opening if $c = \text{com}(s, r, b)$ and rejects otherwise.
+    \end{itemize}
+
+
+    \item Recall the ZK proof for graph isomorphism: the interaction is $\mathcal{P}(x, w) \leftrightarrow \mathcal{V}(x)$ where $x$ represents graphs $G_0 = (V, E_0)$ and $G_1 = (V, E_1)$ and $w$ represents a permutation on $V$ such that $w(G_0) = G_1$.
+    \begin{enumerate}
+        \item $\mathcal{P}$ samples a random permutation $\sigma : V \to V$ and sends the graph $H = \sigma(G_1)$ to $\mathcal{V}$.
+        \item $\mathcal{V}$ samples a random bit $b$ and sends it to $\mathcal{P}$.
+        \item If $b = 1$, then $\mathcal{P}$ defines a permutation $\tau$ to be $\sigma$. If $b = 0$, then instead $\tau = \sigma \circ w$. $\mathcal{P}$ then sends $\tau$ to $\mathcal{V}$.
+        \item $\mathcal{V}$ verifies that $\tau(G_b) = H$ and accepts if so.
+    \end{enumerate}
+
+    Given two instances of this problem $(G_0,G_1)$ and $(G_2, G_3)$ such that $G_0 \cong G_1$ and $G_2 \cong G_3$ but the prover only has access to a witness for one of the two instances, construct a ZK proof for the statement "$G_0 \cong G_1$ OR $G_2 \cong G_3$" and show that it satisfies completeness, soundness and zero-knowledge. \\
+    Note that the proof must not leak which of the two instances the prover has a witness for. You cannot assume that all the graphs have the same vertex set (only that the two graphs in each instance have the same vertex set).
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -14,3 +14,7 @@ Th 4/09
 : **Homework**{: .label .label-yellow } [Homework 9](assets/homework/hw-9.pdf)
     : [LaTeX](assets/homework/hw-9.tex), [Solution](assets/homework/hw-9-sol.pdf)
 {% endcomment %}
+
+Fr 4/10
+: **Homework**{: .label .label-yellow } [Homework 4](assets/homework/hw4.pdf)
+    : [LaTeX](assets/homework/hw4_template.tex)
