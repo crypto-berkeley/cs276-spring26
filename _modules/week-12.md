@@ -17,4 +17,5 @@ Th 4/09
 
 Fr 4/10
 : **Homework**{: .label .label-yellow } [Homework 4](assets/homework/hw4.pdf)
-    : [LaTeX](assets/homework/hw4_template.tex)
+    : [LaTeX](assets/homework/hw4_template.tex), [Solution](assets/homework/hw4-sol.pdf)
+    
