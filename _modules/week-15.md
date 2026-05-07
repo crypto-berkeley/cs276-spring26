@@ -12,8 +12,8 @@ Tu 4/28
 {% endcomment %}
 
 Th 4/30
-: **Final Exam**{: .label .label-red } Final Exam
-    : 
+: **Final Exam**{: .label .label-red } Final Exam 
+    : [Solutions](assets/exams/final_sol.pdf)
 {% comment %}
 : **Homework**{: .label .label-yellow } [Homework 11](assets/homework/hw-11.pdf)
 {% endcomment %}
